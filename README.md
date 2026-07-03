@@ -2,9 +2,16 @@
 
 # AgentLearning
 
-Agent harness, tool calling, skill, workflow, and memory learning experiments.
+Personal workspace for agent learning, reusable skills, technical notes, and ERP agent experiments.
 
-This repository contains small Python examples built around DeepSeek's OpenAI-compatible API. The examples intentionally start simple and gradually add concepts:
+This repository is not a single product repo. It is split by work boundary:
+
+- reusable skills live in `skills/`
+- throwaway or learning experiments live in `labs/`
+- longer-running agent projects live in `projects/`
+- scheduled or accumulated technical notes live in `knowledge/`
+
+The current agent harness examples use DeepSeek's OpenAI-compatible API and gradually add concepts:
 
 - direct model calls
 - multi-round `messages`
@@ -19,9 +26,11 @@ This repository contains small Python examples built around DeepSeek's OpenAI-co
 ## Layout
 
 ```text
-harness-test/  Python examples for model/tool/harness experiments
-notes/         Learning notes and summaries
-sjh-style/     Personal style skill draft and references
+assets/                         Images and shared media
+knowledge/scheduled-tech-notes/ Scheduled technical learning notes
+labs/agent-harness/             Python examples for model/tool/harness experiments
+projects/erp-kchz-agent/        ERP kchz agent development records and experiments
+skills/sjh-style/               Personal style skill draft and references
 ```
 
 ## Setup
@@ -47,7 +56,9 @@ The next practical direction is to build a small CLI learning assistant agent:
 ```text
 User input
   -> LangGraph agent node
-  -> notes tools: search_notes / read_note / save_note / finish
+  -> knowledge tools: search_notes / read_note / save_note / finish
   -> simple text memory first
   -> embedding and rerank later
 ```
+
+For ERP work, keep `projects/erp-kchz-agent/` as the boundary. Put rough notes in `notes/`, durable decisions in `decisions/`, and runnable probes or mock experiments in `experiments/`.

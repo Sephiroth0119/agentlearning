@@ -1,0 +1,1 @@
+"""Readonly SQL query boundary."""

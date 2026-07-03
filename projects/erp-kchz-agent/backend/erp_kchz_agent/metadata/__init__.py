@@ -1,0 +1,1 @@
+"""DMG metadata boundary."""

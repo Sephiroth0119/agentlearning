@@ -1,4 +1,6 @@
-# sjhskill
+![AgentLearning README hero](assets/readme-hero.png)
+
+# AgentLearning
 
 Agent harness, tool calling, skill, workflow, and memory learning experiments.
 

@@ -1,0 +1,4 @@
+interface:
+  display_name: "SJH Self Style"
+  short_description: "Answer or rewrite in SJH's short, direct Chinese technical-chat voice."
+  default_prompt: "Use $sjh-style to answer in SJH's own short, direct Chinese technical-chat voice."
